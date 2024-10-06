@@ -2,7 +2,7 @@
 This repository contains the project I submitted for my Software Engineering exam during my Bachelor degree.
 
 # Project Description
-The project specifications, provided by the professor, are located in the "indicazioni" folder. 
+The project specifications, provided by the professor, are located in the [indicazioni](./indicazioni/). folder. 
 
 In summary, the task was to develop a software system with specific features to offer an electronic voting service.
 
