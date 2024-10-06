@@ -12,7 +12,7 @@ The entire development process is documented in Italian in the file [relazione p
 I recommend to view the report because it shows step by step the development phases and adopts many of the well-known diagrams used in software engineering
 
 # Database Setup
-To recreate the MySQL database structure import into mySQL PHPMyAdmin the [database dump](./dum%20database/e_voting_platform%20installazione%20pulita.sql)
+To recreate the MySQL database structure import into mySQL PHPMyAdmin the [database dump](./dump%20database/e_voting_platform%20installazione%20pulita.sql)
 Maven Project
 
 # code
