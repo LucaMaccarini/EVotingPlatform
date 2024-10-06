@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="31.0" layoutY="14.0" text="Tipo di votazione:" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="36.0" text="Proprietario:" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lb_username_proprietario" layoutX="112.0" layoutY="36.0" text="[username]">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="58.0" text="Data di termine:" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_data" layoutX="134.0" layoutY="58.0" text="[data]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="119.0" text="Quesito" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_no" layoutX="376.0" layoutY="457.0" mnemonicParsing="false" onAction="#click_voto_no" prefHeight="30.0" prefWidth="33.0" text="No" />
+      <Label fx:id="lb_voto" alignment="TOP_CENTER" layoutX="1.0" layoutY="420.0" prefHeight="20.0" prefWidth="575.0" text="Voto" textAlignment="CENTER" textFill="#059a00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_si" layoutX="170.0" layoutY="457.0" mnemonicParsing="false" onAction="#click_voto_si" prefHeight="30.0" prefWidth="33.0" text="Si" />
+      <Label layoutX="146.0" layoutY="14.0" text="Referendum">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_quesito" alignment="TOP_CENTER" layoutX="3.0" layoutY="148.0" prefHeight="262.0" prefWidth="567.0" text="Label" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="80.0" text="Modalità di calcolo del vincitore:" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_mod_vincitore" layoutX="236.0" layoutY="80.0" text="[tipo_vincitore]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_astenuto" layoutX="213.0" layoutY="457.0" mnemonicParsing="false" onAction="#click_astenuto" prefHeight="30.0" prefWidth="152.0" text="Scheda bianca (astenuto)" />
+   </children>
+</AnchorPane>

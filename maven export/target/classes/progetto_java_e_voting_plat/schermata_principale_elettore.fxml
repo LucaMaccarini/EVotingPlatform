@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Utente:" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lb_username" layoutX="62.0" layoutY="15.0" text="[username]">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="36.0" text="Elettore" textFill="#d77a00">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Accordion layoutX="14.0" layoutY="65.0" prefHeight="531.0" prefWidth="574.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="469.0" prefWidth="574.0" text="Gestione Account">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="15.0" text="Modifica password" textFill="#d77a00">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Button fx:id="bt_disconnetti" layoutX="312.0" layoutY="78.0" mnemonicParsing="false" onAction="#disconnectAccount" text="Disconnetti account" />
+                        <Button layoutX="323.0" layoutY="117.0" mnemonicParsing="false" onAction="#elimina_account" text="Elimina account" />
+                        <Button layoutX="14.0" layoutY="151.0" mnemonicParsing="false" onAction="#modifica_password" text="Modifica" />
+                        <PasswordField fx:id="tx_modifica_pass_attuale" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="214.0" promptText="Password attuale" />
+                        <PasswordField fx:id="tx_modifica_pass_nuova" layoutX="14.0" layoutY="78.0" prefHeight="25.0" prefWidth="214.0" promptText="Nuova password" />
+                        <PasswordField fx:id="tx_modifica_pass_ripeti" layoutX="14.0" layoutY="117.0" prefHeight="25.0" prefWidth="214.0" promptText="Ripeti nuova password" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Visualizza le sessioni di voto">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#fill_sessioni_di_voto_listview" prefHeight="4.0" prefWidth="64.0" text="aggiorna" />
+                        <ListView fx:id="listView_sessioni_di_voto" layoutX="7.0" layoutY="42.0" prefHeight="405.0" prefWidth="559.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="visualizza vincitori">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="7.0" layoutY="9.0" mnemonicParsing="false" onAction="#fill_sessioni_di_voto_vincitori_listview" text="aggiorna" />
+                        <ListView fx:id="listView_sessioni_di_voto_vincitori" layoutX="7.0" layoutY="42.0" prefHeight="405.0" prefWidth="558.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
